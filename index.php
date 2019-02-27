@@ -30,6 +30,11 @@ $header_footer_bg = '#000';
             padding: 10px 25px;
             text-transform: capitalize;
         }
+        section{
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #ddd;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +56,7 @@ $header_footer_bg = '#000';
                 <div class="content">
                     <!--VARIABLE SECTION-->
                     <section class="variable">
+                        <h3>php variable</h3>
                         <?php
                         $a = 10;
                         $b = 25;
@@ -60,6 +66,27 @@ $header_footer_bg = '#000';
                         echo 'variable "$b" is equal to ' . '=' . $b . '<br/>';
                         echo 'variable "$a" and variable "$b" is equal to "$c" that is ' . '=' . $c . '<br/>';
                         echo $d;
+                        ?>
+                    </section>
+                    <section class="show-data-in-php">
+                        <h3>Show Data in php</h3>
+                        <?php
+                        //SHOW DATA IN PHP
+                        /**
+                         * php te 'echo' and 'print' dui vabei data show korano jay but.
+                         * echo = multiple data show korate pare
+                         * print = multiple data show korate pare na
+                         *
+                         * EXAMPLE:
+                         */
+                        echo 'This is nice opening to learning php';
+                        echo '<br/>';
+                        print 'This is nice opening to learning php';
+                        echo '<br/>';
+                        /*here will same output but if it will be like below 'print' will generate error*/
+                        echo 'this ', 'is ', 'nice ', 'opening ', 'to ', 'learning', 'php';
+                        echo '<br/>';
+                        //print 'this','is','nice','opening','to','learning','php';
                         ?>
                     </section>
                 </div>
